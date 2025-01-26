@@ -11,7 +11,8 @@
 
 <body>
     <div class="sidebar">
-        <div class="logo"><img src="/Assets/financeLogo.png" alt="" id="logo-img"><span class="logo-text">Finance</span></div>
+        <div class="logo"><img src="/Assets/financeLogo.png" alt="" id="logo-img"><span class="logo-text">Finance</span>
+        </div>
 
         <ul class="side-menu">
             <li><img src="/Assets/dashboard.png" alt="">Dashboard <i class="fa-solid fa-chevron-up"></i>
@@ -35,7 +36,8 @@
 
     <div class="main">
         <div class="header">
-            <div class="searchbox"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search here..."></div>
+            <div class="searchbox"><i class="fa-solid fa-magnifying-glass"></i><input type="text"
+                    placeholder="Search here..."></div>
             <div class="profile">
                 <img src="Assets/notification.png" alt="" class="profile-img">
                 <img src="Assets/message.png" alt="" class="profile-img">
@@ -44,72 +46,102 @@
         </div>
 
 
-        <div class="card-container">
-            <div class="card blue-card">
-                <h4>Total Income</h4>
-                <h1>$ 579,000</h1>
-                <p>Saved 25%</p>
-            </div>
-            <div class="card light-blue-card">
-                <h4>Total Expenses</h4>
-                <h1>$ 79,000</h1>
-                <p>Saved 25%</p>
-            </div>
-            <div class="card purple-card">
-                <h4>Cash on Hand</h4>
-                <h1>$ 92,000</h1>
-                <p>Saved 25%</p>
-            </div>
-            <div class="card green-card">
-                <h4>Net Profit Margin</h4>
-                <h1>$ 179,000</h1>
-                <p>Saved 65%</p>
-            </div>
-        </div>
-
-        <div class="chart-container">
-            <div class="chart">
-                <div class="chart-title">
-                    AP and AR Balance <br>
-                    Avg. $5,309
+        <div class="main-body">
+            <div class="card-container">
+                <div class="card blue-card">
+                    <h4>Total Income</h4>
+                    <h1>$ 579,000</h1>
+                    <p>Saved 25%</p>
                 </div>
-                <div class="btns">
-                    <div class="btn">Monthly </div>
-                    <div class="btn">Last Year</div>
+                <div class="card light-blue-card">
+                    <h4>Total Expenses</h4>
+                    <h1>$ 79,000</h1>
+                    <p>Saved 25%</p>
                 </div>
-                <img src="Assets/lineChart.png" alt="">
+                <div class="card purple-card">
+                    <h4>Cash on Hand</h4>
+                    <h1>$ 92,000</h1>
+                    <p>Saved 25%</p>
+                </div>
+                <div class="card green-card">
+                    <h4>Net Profit Margin</h4>
+                    <h1>$ 179,000</h1>
+                    <p>Saved 65%</p>
+                </div>
             </div>
 
-            <div class="chart">
-                <div class="chart-title">% of Income Budget</div>
-                <img src="Assets/budget.png" alt="">
-                <div class="info">
-                    <div class="info-text">
-                        Blance <br>
-                        -$18,570
+            <div class="chart-container">
+                <div class="chart" id="line-chart">
+                    <div class="chart-header">
+                        <div class="chart-title line-chart-title">
+                            <div class="ap-ar-balance">AP and AR Balance</div>
+                            <div class="avg-text">Avg. $5,309 </div>
+                        </div>
+                        <div class="btns">
+                            <div class="btn">Monthly <i class="fa-solid fa-arrow-down"></i></div>
+                            <div class="btn">Last Year <i class="fa-solid fa-arrow-down"></i></div>
+                        </div>
                     </div>
-                    <div class="info-text">
-                        Blance <br>
-                        $31,430
-                    </div>
-                </div>
-                <a href=""> View Full Report</a>
-            </div>
 
-            <div class="chart">
-                <div class="chart-title">% of Expenses Budget</div>
-                <img src="Assets/Profit.png" alt="">
-                <div class="info">
-                    <div class="info-text">
-                        Blance <br>
-                        -$18,570
-                    </div>
-                    <div class="info-text">
-                        Blance <br>
-                        $31,430
-                    </div>
+                    <img src="Assets/lineChart.png" alt="" class="line-chart-img">
+
                 </div>
-                <a href=""> View Full Report</a>
+
+                <div class="chart">
+                    <div class="chart-title pie-chart-title">% of Income Budget</div>
+                    <img src="Assets/budget.png" alt="" class="pie-chart-img">
+                    <div class="info">
+                        <div class="info-text">
+                            <div class="info-text-1">
+                                <div class="dot white-dot"></div>
+                                Blance
+                            </div>
+                            <div class="info-text-2">
+                                -$18,570
+                            </div>
+
+                        </div>
+                        <div class="info-text">
+                            <div class="info-text-1">
+                                <div class="dot blue-dot"></div>
+                                Blance
+                            </div>
+                            <div class="info-text-2">
+                                $31,430
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <a href=""> View Full Report</a>
+                </div>
+
+                <div class="chart">
+                    <div class="chart-title pie-chart-title">% of Expenses Budget</div>
+                    <img src="Assets/Profit.png" alt="" class="pie-chart-img">
+                    <div class="info">
+                        <div class="info-text">
+                            <div class="info-text-1">
+                                <div class="dot white-dot"></div>
+                                Blance
+                            </div>
+                            <div class="info-text-2">
+                                -$18,570
+                            </div>
+
+                        </div>
+                        <div class="info-text">
+                            <div class="info-text-1">
+                                <div class="dot blue-dot"></div>
+                                Blance
+                            </div>
+                            <div class="info-text-2">
+                                $31,430
+                            </div>
+                        </div>
+                    </div>
+                    <hr >
+                    <a href=""> View Full Report</a>
+                </div>
             </div>
         </div>
     </div>
