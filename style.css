@@ -11,7 +11,7 @@ body {
 /* Sidebar */
 .sidebar {
     width: 13%;    
-    padding: 2rem 2.25rem 0rem 1.5rem;
+    padding: 1rem 2.25rem 0rem 1.5rem;
     color: #ababb3;
 }
 .side-menu{
@@ -72,7 +72,7 @@ li img {
     width: 80%;
     display: flex;
     flex-direction: column;    
-    padding: 2rem;
+    padding: 1rem;
     background-color: #f8f9fe;
 }
 .header {
@@ -262,42 +262,42 @@ a {
     background-color: #a9a4e4;;
 }
 
-@media (max-width: 800px) { /* Adjust 800px as the height limit */
+@media (max-width: 800px) { 
     .chart-container {
-        grid-template-columns: 1fr; /* Stack items vertically */
-        gap: 20px; /* Adjust gap if needed */
+        grid-template-columns: 1fr; 
+        gap: 20px; 
     }
 
     .chart {
-        margin: 0 auto; /* Center the charts if desired */
-        width: 90%; /* Optional: Adjust chart width */
+        margin: 0 auto;
+        width: 90%; 
     }
     .header {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the left */
-        gap: 1rem; /* Add spacing between stacked items */
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 1rem; 
     }
 
     .searchbox {
-        width: 100%; /* Ensure searchbox takes full width */
+        width: 100%; 
     }
 
     .profile {
-        width: 100%; /* Allow the profile section to take full width */
+        width: 100%; 
         display: flex;
-        justify-content: space-between; /* Spread items across the navbar width */
+        justify-content: space-between; 
     }
     body {
-        flex-direction: column; /* Stack sidebar and main vertically */
+        flex-direction: column; 
     }
 
     .sidebar {
-        width: 100%; /* Full width for the sidebar */
-        padding: 1rem; /* Adjust padding for better layout */
+        width: 100%; 
+        padding: 1rem; 
     }
 
     .main {
-        width: 100%; /* Full width for the main content */
-        padding: 1rem; /* Adjust padding for smaller screen */
+        width: 100%; 
+        padding: 1rem; 
     }
 }
