@@ -15,25 +15,29 @@ body {
     color: #ababb3;
 }
 .side-menu{
-    /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
+    padding: 0; 
+    margin: 0; 
     margin-top: 1rem;
-}
-li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 0;
-    font-size: 0.85rem;
-    font-weight: 600;
-
 }
 ul {
     list-style-type: none; 
 }
+.list-item {    
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    justify-content:flex-start;
+
+}
+.list-item-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
 .sub-item {
-    padding-left: 2rem;
+    margin-left: 2rem;
 }
 .side-menu-text {
     /* padding-left: 2rem; */
@@ -43,17 +47,17 @@ ul {
 li img {
     height: 1rem;
     width: 1rem;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
 }
 
 .logo {
     height: 4rem;
-    width: 8rem;
+    width: 100%;
     color: #797fc5;
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 1.3rem;
     padding: 0.5rem 0.5rem;
 }
@@ -61,13 +65,14 @@ li img {
 #logo-img{
     height: 2.5rem;
     width: 2.5rem;
+    margin-right: 1rem;
 }
 
 .main {
     width: 80%;
     display: flex;
     flex-direction: column;    
-    padding: 20px;
+    padding: 2rem;
     background-color: #f8f9fe;
 }
 .header {
@@ -151,6 +156,8 @@ input{
     background-color: #85d0b2;
 }
 
+/* Charts */
+
 .chart-container{
     background-color: #ffffff;
     display: grid;
@@ -164,6 +171,9 @@ input{
     justify-content: space-around;
     background-color: #FAFBFF;
 }
+
+
+
 .chart-header {
     display: flex;
     justify-content: space-between;
@@ -250,4 +260,44 @@ a {
 }
 .blue-dot{
     background-color: #a9a4e4;;
+}
+
+@media (max-width: 800px) { /* Adjust 800px as the height limit */
+    .chart-container {
+        grid-template-columns: 1fr; /* Stack items vertically */
+        gap: 20px; /* Adjust gap if needed */
+    }
+
+    .chart {
+        margin: 0 auto; /* Center the charts if desired */
+        width: 90%; /* Optional: Adjust chart width */
+    }
+    .header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+        gap: 1rem; /* Add spacing between stacked items */
+    }
+
+    .searchbox {
+        width: 100%; /* Ensure searchbox takes full width */
+    }
+
+    .profile {
+        width: 100%; /* Allow the profile section to take full width */
+        display: flex;
+        justify-content: space-between; /* Spread items across the navbar width */
+    }
+    body {
+        flex-direction: column; /* Stack sidebar and main vertically */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width for the sidebar */
+        padding: 1rem; /* Adjust padding for better layout */
+    }
+
+    .main {
+        width: 100%; /* Full width for the main content */
+        padding: 1rem; /* Adjust padding for smaller screen */
+    }
 }
