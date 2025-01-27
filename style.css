@@ -162,7 +162,7 @@ input{
     background-color: #ffffff;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    gap: 20px;
+    gap: 1.25rem;
     margin: 1rem 2rem;
 }
 .chart{
@@ -171,8 +171,6 @@ input{
     justify-content: space-around;
     background-color: #FAFBFF;
 }
-
-
 
 .chart-header {
     display: flex;
@@ -262,7 +260,7 @@ a {
     background-color: #a9a4e4;;
 }
 
-@media (max-width: 800px) { 
+@media (max-width: 767px) { 
     .chart-container {
         grid-template-columns: 1fr; 
         gap: 20px; 
