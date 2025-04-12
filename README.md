@@ -2,6 +2,11 @@
 
 This project includes an interactive user interface built using HTML and CSS, and includes assets such as images stored in an assets folder.
 
+## 🔗 Live Demo
+
+You can view the deployed project here:  
+👉 [ https://fatima-amani.github.io/Finance-Dashboard/]( https://fatima-amani.github.io/Finance-Dashboard/)
+
 ## Project Files
 
 - `index.html` - The main HTML file that structures the content of the dashboard.
